@@ -20,11 +20,10 @@ class NewlightparseSpider(scrapy.Spider):
 
 
 # Создание экземпляра CrawlerProcess с нужными настройками
-process = CrawlerProcess(settings=
-    {
-        'FEED_FORMAT': 'json',  # Формат вывода
-        'FEED_URI': 'luminaires.json',  # Имя файла для вывода
-        'FEED_EXPORT_ENCODING': 'utf-8'
+process = CrawlerProcess(settings={
+        'FEED_FORMAT': 'json',  # Формат
+        'FEED_URI': 'luminaires.json',  # Имя файла
+        'FEED_EXPORT_ENCODING': 'utf-8'  # Кодировка
     })
 
 # Запуск паука
