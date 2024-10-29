@@ -33,11 +33,6 @@ process = CrawlerProcess(settings={
 #         'FEED_EXPORT_ENCODING': 'utf-8'  # Кодировка
 #     })
 
-
-
-
-
-
 # Запуск паука
 process.crawl(NewlightparseSpider)
 process.start()
